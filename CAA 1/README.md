@@ -51,9 +51,7 @@ top -b -o %CPU -n 1 | grep --color=no "PID USER" -A 10
 top -b -o %MEM -n 1 | grep --color=no "PID USER" -A 10
 ```
 
-> [!TIP]
->
-> ### Explanation
+> [!NOTE]
 >
 > - `-b`: runs `top` in batch mode, preventing any input to the command.
 >   Useful to run in a script (as is the case for the creation of this
@@ -73,9 +71,7 @@ sudo find /usr -type f -printf '%s %p\n' | sort -nr \
 | head -n 24 | awk '{print $2, $1/1024/1024 " MB"}'
 ```
 
-> [!TIP]
->
-> ### Explanation
+> [!NOTE]
 >
 > - `sudo`: required to search everywhere inside `/usr`, since some
 >   folders don’t have read permissions for regular users.
@@ -97,9 +93,7 @@ sudo find /usr -type f -printf '%s %p\n' | sort -nr \
 sudo find /usr -type f -executable -print
 ```
 
-> [!TIP]
->
-> ### Explanation
+> [!NOTE]
 >
 > - `sudo`: required to search everywhere inside `/usr`, since some
 >   folders don’t have read permissions for regular users.

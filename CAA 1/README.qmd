@@ -69,9 +69,7 @@ quantity of memory.
 top -b -o %MEM -n 1 | grep --color=no "PID USER" -A 10
 ```
 
-::: {.callout-tip}
-#### Explanation
-
+::: {.callout-note}
 - `-b`: runs `top` in batch mode, preventing any input to the command. Useful to run in a script (as is the case for the creation of this document).
 - `-o %CPU`/`-o %MEM`: Sorts processes by highest CPU/Memory usage.
 - `-n 1`: Run one iteration, instead of the default continuous output.
@@ -86,9 +84,7 @@ sudo find /usr -type f -printf '%s %p\n' | sort -nr \
 | head -n 24 | awk '{print $2, $1/1024/1024 " MB"}'
 ```
 
-::: {.callout-tip}
-#### Explanation
-
+::: {.callout-note}
 - `sudo`: required to search everywhere inside `/usr`, since some folders don't have read permissions for regular users.
 - `find /usr -type f`: finds all **f**iles inside the `/usr` directory, including subdirectories.
 - `-fprintf '%s %p\n'`: prints resulting files in the string format specified, i.e. indicating both the **s**ize and **p**ath of the file found by the `find` command.
@@ -103,9 +99,7 @@ sudo find /usr -type f -printf '%s %p\n' | sort -nr \
 sudo find /usr -type f -executable -print
 ```
 
-::: {.callout-tip}
-#### Explanation
-
+::: {.callout-note}
 - `sudo`: required to search everywhere inside `/usr`, since some folders don't have read permissions for regular users.
 - `find /usr -type f`: finds all **f**iles inside the `/usr` directory, including subdirectories.
 - `-executable`: prints all files that are executable.
