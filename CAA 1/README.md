@@ -106,9 +106,6 @@ sudo find /usr -type f -executable -print
 
 ### f) User management
 
-<details open>
-<summary>Code</summary>
-
 ``` bash
 #!/bin/bash
 
@@ -137,8 +134,6 @@ fi
 # group by default
 sudo useradd -u $new_userid -g users tux
 ```
-
-</details>
 
 ### g) Report generation
 

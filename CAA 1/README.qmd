@@ -110,7 +110,7 @@ sudo find /usr -type f -executable -print
 
 ### f) User management
 
-```{bash}
+```bash
 #!/bin/bash
 
 # Remove the `tux` user if already created (this is a test user,
