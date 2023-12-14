@@ -4,6 +4,7 @@
 ## CAAs
 
 - [CAA 1](./CAA%201/)
+- [CAA 2](./CAA%202/)
 
 ## PRs
 
